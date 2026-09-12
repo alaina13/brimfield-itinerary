@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Brimfield Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Work Sans", system-ui, -apple-system, sans-serif;
+    background: #faf7f2;
+    color: #2b2621;
+  }
+  a { color: #a3461f; text-decoration: underline; }
+  a:hover { color: #7d3517; }
+  h1, h2, h3 { font-family: "Lora", Georgia, serif; margin: 0; }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #a3461f;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 3px 9px;
+    border-radius: 20px;
+  }
+  .stop {
+    background: #ffffff;
+    border: 1px solid #e8e0d4;
+    border-left: 4px solid #a3461f;
+    border-radius: 4px;
+    padding: 16px 18px;
+  }
+  .callout {
+    background: #ffffff;
+    border: 1px solid #e8e0d4;
+    border-left: 4px solid #a3461f;
+    border-radius: 4px;
+    padding: 14px 16px;
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+  .note {
+    font-size: 12.5px;
+    color: #7d7364;
+    background: #f4ece1;
+    border-radius: 3px;
+    padding: 8px 11px;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  .park {
+    font-size: 12.5px;
+    color: #3d4b57;
+    background: #eaeef1;
+    border-radius: 3px;
+    padding: 8px 11px;
+    margin-top: 10px;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  .park svg { flex-shrink: 0; margin-top: 1px; }
+
+  /* Anchor nav */
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #faf7f2;
+    border-bottom: 3px solid #2b2621;
+  }
+  .site-nav-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .site-nav .brand {
+    font-family: "Lora", Georgia, serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2b2621;
+    text-decoration: none;
+  }
+  .site-nav .links {
+    display: flex;
+    gap: 20px;
+  }
+  .site-nav .links a {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5c5449;
+  }
+  .site-nav .links a:hover { color: #a3461f; }
+
+  section { max-width: 760px; margin: 0 auto; padding: 0 0 56px 0; }
+  section + section { border-top: 1px solid #e8e0d4; padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a class="brand" href="#top">Brimfield 2026</a>
+    <div class="links">
+      <a href="#itinerary">Itinerary</a>
+      <a href="#map">Field Map</a>
+    </div>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- ================= ITINERARY ================= -->
+<section id="itinerary">
+
+  <div style="display:flex; flex-direction:column; gap:6px; padding: 44px 28px 24px 28px; border-bottom: 3px solid #2b2621;">
+    <div class="label">Weekend Itinerary</div>
+    <h1 style="font-size: 38px; line-height: 1.05;">Your Brimfield Plan</h1>
+    <div style="font-size: 16px; color:#5c5449;">Saturday Sept 12 – Sunday Sept 13, from Wellsworth Motel, Southbridge</div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:8px; padding: 18px 28px 0 28px;">
+    <span class="tag" style="background:#f7e6da; color:#8a3c1f;">Secretary desk</span>
+    <span class="tag" style="background:#e3e8ee; color:#3d5470;">Pearl necklace</span>
+    <span class="tag" style="background:#e6ede1; color:#46613c;">Knick-knacks / art</span>
+    <span class="tag" style="background:#f5ecd7; color:#8a6a1f;">MTG / Pokémon cards</span>
+    <span class="tag" style="background:#efe1ea; color:#7a3f63;">Quilts</span>
+  </div>
+
+  <div style="margin: 16px 28px 0 28px; display:flex; align-items:flex-start; gap:9px; background:#eaeef1; border-radius:4px; padding:12px 16px; font-size:13px; color:#3d4b57; line-height:1.55;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3d4b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+    <div><b>Saturday: </b>New England Motel sits right next to Midway, Central Park, and Hertan's, so park there Saturday and walk to every stop that day.<br><b>Sunday:</b> Auction Acres is well south of New England Motel, past Quaker Acres, May's, and Crystal Brook, so you'll drive down to it after the covered pavilions rather than walk.<br><br>Cash, $5–$20/day.</div>
+  </div>
+
+  <!-- Saturday -->
+  <div style="margin: 30px 28px 0 28px;">
+    <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:14px;">
+      <h2 style="font-size:22px;">Saturday</h2>
+      <span style="font-size:14px; color:#8a8072;">The fresh-selection hunt</span>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:12px;">
+
+      <div class="stop">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+          <strong style="font-size:14.5px;">7:00 – 7:30 AM · Depart Wellsworth Motel</strong>
+        </div>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          US-20 West from Southbridge, ~20–30 min. Traffic thickens fast near the Sturbridge/Brimfield line — leaving on time buys you closer parking.
+        </div>
+      </div>
+
+      <div class="stop">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center;">
+          <strong style="font-size:14.5px;">8:00 – 10:30 AM · Hertan's Field — Weekend Warrior Show</strong>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <span class="tag" style="background:#e3e8ee; color:#3d5470;">Pearls</span>
+            <span class="tag" style="background:#f5ecd7; color:#8a6a1f;">Cards</span>
+          </div>
+        </div>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Arrive at opening — a fresh wave of vendors sets up for the weekend, so inventory is unpicked. Good ground for vintage estate jewelry and collectible lots.
+        </div>
+        <div class="note">Verified: Weekend Warrior only runs the last weekend of each Brimfield show (May 16–17, Jul 18–19, <strong>Sept 12–13</strong>) — today's exactly right for it.</div>
+        <div class="park"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d4b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Walk over from New England Motel — it's right next door on the map, no need to move the car.</div>
+      </div>
+
+      <div class="stop">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center;">
+          <strong style="font-size:14.5px;">10:30 AM – 1:00 PM · Central Park Antique Mart &amp; Midway Antique Market</strong>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <span class="tag" style="background:#e6ede1; color:#46613c;">Knick-knacks</span>
+            <span class="tag" style="background:#f5ecd7; color:#8a6a1f;">Cards</span>
+          </div>
+        </div>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Central Park leans sports memorabilia, pennants, and retro pop-culture — good for son's room. Midway's eclectic booths are where vintage toys and stray card boxes turn up.
+        </div>
+        <div class="note">No field at Brimfield specializes in trading cards — treat both as "possible," not "guaranteed," and ask dealers directly.</div>
+        <div class="park"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d4b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Continue on foot from Hertan's — no need to touch the car either way until you're ready to head to New England Motel for lunch.</div>
+      </div>
+
+      <div class="stop">
+        <strong style="font-size:14.5px;">1:00 – 2:00 PM · Lunch + mid-day scout</strong>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Walk the main strip for food; take a first pass at heavy furniture on May's and New England Motel while you eat on the move.
+        </div>
+      </div>
+
+      <div class="stop">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center;">
+          <strong style="font-size:14.5px;">2:00 – 5:00 PM · New England Motel &amp; May's Antique Market</strong>
+          <span class="tag" style="background:#f7e6da; color:#8a3c1f;">Desk</span>
+        </div>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Evaluate secretary desks (no hutch): check dimensions, ask if the piece splits in two for the ID.4, and negotiate. Buy today and get it loaded before you leave — don't haul furniture on Sunday's short window.
+        </div>
+        <div class="park"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d4b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>You're already home base here — the car's steps away, so ask about a loading pass as soon as you arrive and load the desk straight in if you buy it.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sunday -->
+  <div style="margin: 34px 28px 0 28px;">
+    <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:14px;">
+      <h2 style="font-size:22px;">Sunday</h2>
+      <span style="font-size:14px; color:#8a8072;">2-hour quick-strike clearance</span>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:12px;">
+
+      <div class="stop">
+        <strong style="font-size:14.5px;">7:30 AM · Depart Wellsworth Motel</strong>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">Leave early — today's window is short.</div>
+      </div>
+
+      <div class="stop">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center;">
+          <strong style="font-size:14.5px;">8:00 – 9:00 AM · New England Motel — covered pavilions</strong>
+          <span class="tag" style="background:#efe1ea; color:#7a3f63;">Quilts</span>
+        </div>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Head under the covered tents for textiles and Depression-era quilts while dealers are fresh and the linens are clean and dry.
+        </div>
+        <div class="note">Verified: New England Motel's three pavilions (75 dealers) open at 6am Wed–Sun, so you can start earlier than 8 if you want first pick.</div>
+        <div class="park"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d4b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Same lot as Saturday — pay again since there's no overnight parking, but it's the same spot, no hunting for a new one.</div>
+      </div>
+
+      <div class="stop">
+        <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; align-items:center;">
+          <strong style="font-size:14.5px;">9:00 – 10:00 AM · Brimfield Auction Acres</strong>
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <span class="tag" style="background:#efe1ea; color:#7a3f63;">Quilts</span>
+            <span class="tag" style="background:#e6ede1; color:#46613c;">Knick-knacks</span>
+          </div>
+        </div>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Head down for the picker booths — cottage-style and "cutter" quilts, plus any last boy-ish bedroom decor.
+        </div>
+        <div class="note">Verified: Auction Acres only opens two days per show — this week that's its closing weekend, so today's one of your only two chances.</div>
+        <div class="park"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d4b57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Not next door — the map shows it several fields south, past Quaker Acres, May's, and Crystal Brook. Drive down and use Auction Acres' own lot rather than walking the full stretch in your one-hour window.</div>
+      </div>
+
+      <div class="stop">
+        <strong style="font-size:14.5px;">10:00 AM · Head home</strong>
+        <div style="font-size:13.5px; color:#5c5449; margin-top:6px; line-height:1.5;">
+          Beat the midday traffic peak and the afternoon vendor pack-out gridlock on Rte 20.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin: 36px 28px 0 28px; padding-top:18px; border-top:1px solid #e8e0d4; font-size:12px; color:#8a8072; line-height:1.6;">
+    Field names, show dates, and hours cross-checked against Hertan's Weekend Warrior Show and the New England Motel Antique Show's own pages (Sept 2026). Card-hunting spots are best guesses, not guarantees — ask at the Information Booth (Rte 20 &amp; Mill Lane) for dealers carrying TCG lots.
+  </div>
+
+</section>
+
+<!-- ================= MAP ================= -->
+<section id="map">
+
+  <div style="display:flex; flex-direction:column; gap:6px; padding: 44px 28px 24px 28px; border-bottom: 3px solid #2b2621;">
+    <div class="label">Field Map</div>
+    <h1 style="font-size: 34px; line-height: 1.05;">Route 20 Show Fields</h1>
+    <div style="font-size: 15px; color:#5c5449;">Map courtesy of the Journal of Antiques &amp; Collectibles</div>
+  </div>
+
+  <div style="margin: 24px 28px 0 28px; border-radius:6px; overflow:hidden; border:1px solid #e8e0d4;">
+    <img src="images/brimfield-field-map.webp" alt="Map of Brimfield antique show fields along Route 20" style="display:block; width:100%; height:auto;">
+  </div>
+
+  <div style="margin: 24px 28px 0 28px; display:flex; flex-direction:column; gap:12px;">
+    <h2 style="font-size:19px;">What this map corrects</h2>
+
+    <div class="callout">
+      <strong>New England Motel is right next to Midway, Central Park, and Hertan's</strong> — they're clustered together on the same short stretch of Route 20. That's a much shorter walk than the "about a mile" estimate on the itinerary page — parking once at New England Motel and walking to Saturday morning's stops is easier than expected.
+    </div>
+
+    <div class="callout">
+      <strong>Auction Acres is not across the street from New England Motel.</strong> Going south on Route 20, it's several fields further down — past Hertan's, Quaker Acres, May's Antique Market, and Crystal Brook. Budget real walking time (or a short drive) between them on Sunday, not a quick street-crossing.
+    </div>
+
+    <div class="callout">
+      Parking (marked <strong>P</strong> on the map) is genuinely spread field-by-field along the whole strip — Dealer's Choice, Green Acres, Heart O'The Mart, Central Park, Hertan's, Black Swan Meadows, New England Motel, Quaker Acres, near Auction Acres, and near the town center all show their own lots.
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
